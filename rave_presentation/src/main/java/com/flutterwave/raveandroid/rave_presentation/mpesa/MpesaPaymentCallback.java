@@ -24,5 +24,5 @@ public interface MpesaPaymentCallback {
      *
      * @param flwRef The Flutterwave reference to the transaction.
      */
-    void onSuccessful(String flwRef);
+    void onSuccessful(String status, String flwRef, String responseAsString);
 }

@@ -47,7 +47,7 @@ class MpesaInteractorImpl implements MpesaContract.Interactor {
 
     @Override
     public void onPaymentSuccessful(String status, String flwRef, String responseAsString) {
-        callback.onSuccessful(flwRef);
+        callback.onSuccessful(status, flwRef, responseAsString);
     }
 
     @Override
